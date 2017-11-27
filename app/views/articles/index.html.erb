@@ -1,0 +1,11 @@
+<h1>PooPoo Article</h1>
+<p>Read me in your butt</p>
+
+<% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.body %></td>
+    </tr>
+<% end %>
+
+<%= link_to 'New Article', new_article_path %>
